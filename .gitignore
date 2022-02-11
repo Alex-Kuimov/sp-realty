@@ -1,0 +1,8 @@
+/uploads/
+/upgrade/
+/themes/index.php
+/plugins/index.php
+/themes/sp-realty/composer.lock
+/themes/sp-realty/package-lock.json
+/themes/sp-realty/node_modules/
+/themes/sp-realty/vendor/
