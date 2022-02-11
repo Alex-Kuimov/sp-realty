@@ -1,0 +1,40 @@
+:root {
+  --FontMontserrat: 'Montserrat', sans-serif;
+  --FontOpenSans: 'Open Sans', sans-serif;
+
+  --FZSmall: 11px;
+  --FZRegular: 14px;
+
+  --radius: 2px;
+
+  --red: #F33535;
+  --dark: #3e3e3e;
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray: #dedede;
+  --darkGray: #545454;
+
+  --transitionRegular: all .2s ease-out;
+  --transitionLinear : all 0.3s linear;
+
+  --borderColorLight: #CACACA;
+}
+
+body {
+  font-family: var(--FontMontserrat);
+}
+
+p {
+  color: var(--dark);
+  margin: 15px 0;
+  font-size: var(--FZRegular);
+  line-height: 2.1em;
+}
+
+
+.container {
+  width: calc(100% - 50px);
+  max-width: 1024px;
+  margin: 0 auto;
+  display: block;
+}
