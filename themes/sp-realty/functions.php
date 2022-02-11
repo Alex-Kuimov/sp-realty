@@ -140,8 +140,10 @@ add_action( 'widgets_init', 'sp_realty_widgets_init' );
 function sp_realty_scripts() {
 	wp_enqueue_style( 'sp-realty-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'sp-realty-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'sp-realty-style-main', get_template_directory_uri() . '/assets/style.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'sp-realty-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'sp-realty-script-main', get_template_directory_uri() . '/assets/script.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
