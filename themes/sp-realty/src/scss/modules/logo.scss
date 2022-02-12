@@ -1,0 +1,20 @@
+.logo {
+  &__image{
+    width: 180px;
+  }
+
+  &__title{
+    text-decoration: none;
+    color: var(--red);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+  }
+
+  &__description{
+    margin: 0;
+    color: var(--dark);;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: var(--FZSmall);
+  }
+}

@@ -1,0 +1,18 @@
+.header {
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--borderColorLight);
+
+  &__wrapper {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
