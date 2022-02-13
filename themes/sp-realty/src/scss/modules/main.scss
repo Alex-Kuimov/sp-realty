@@ -83,6 +83,19 @@ p {
   line-height: 2.1em;
 }
 
+ul li {
+  list-style: none;
+}
+
+li, dd {
+  line-height: 1.4em;
+}
+
+li {
+  color: var(--dark);
+  font-size: var(--FZRegular);
+}
+
 .container {
   width: calc(100% - 50px);
   max-width: 1024px;
