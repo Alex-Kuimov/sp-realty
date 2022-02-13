@@ -11,21 +11,35 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sp-realty' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'sp-realty' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'sp-realty' ), 'sp-realty', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+
+<!--begin footer-->
+<footer class="footer section">
+	<div class="container">
+		<div class="footer__item">
+			<div class="footer-menu">
+				<nav class="footer-menu__wrapper">
+					<ul class="footer-menu__container">
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="footer__item">
+			<div class="footer__copyright">
+			</div>
+		</div>
+
+		<div class="footer__item">
+			<div class="footer__widget">
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="to--top">
+	<i class="fas fa-chevron-up" aria-hidden="true"></i>
+</div>
+
+<!--end footer-->
 
 
 <?php wp_footer(); ?>

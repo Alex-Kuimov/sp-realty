@@ -8,9 +8,9 @@
 ?>
 
 <!--begin navigation-->
-<nav class="menu">
+<nav class="header-menu">
 	<span class="mobile__menu-close"><i class="fas fa-times"></i></span>
-	<ul class="menu__wrapper menu__parrent">
+	<ul class="header-menu__wrapper header-menu__parrent">
 		<?php
 		wp_nav_menu(
 			array(
