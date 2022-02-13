@@ -3,7 +3,6 @@
 namespace site;
 
 use site\Component;
-use site\models\Menu;
 
 class Header extends Component {
 

@@ -49,7 +49,7 @@ function sp_realty_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-top' => esc_html__( 'Top menu', 'sp-realty' ),
+			'menu-top'    => esc_html__( 'Top menu', 'sp-realty' ),
 			'menu-bottom' => esc_html__( 'Bottom menu', 'sp-realty' ),
 		)
 	);
@@ -139,6 +139,18 @@ function sp_realty_widgets_init() {
 			'id'            => 'social_header',
 			'description'   => esc_html__( 'Add widgets here.', 'sp-realty' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s header-widget__wrapper">',
+			'after_widget'  => '</div>',
+			'before_title'  => '',
+			'after_title'   => '',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Social media (Site footer)', 'sp-realty' ),
+			'id'            => 'social_footer',
+			'description'   => esc_html__( 'Add widgets here.', 'sp-realty' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s footer-widget__wrapper">',
 			'after_widget'  => '</div>',
 			'before_title'  => '',
 			'after_title'   => '',

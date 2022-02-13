@@ -12,6 +12,7 @@
   --white: #FFFFFF;
   --black: #000000;
   --gray: #dedede;
+  --grayLight: #f1f1f1;
   --darkGray: #545454;
 
   --transitionRegular: all .2s ease-out;
@@ -53,7 +54,6 @@ h5,
 h6 {
   color: var(--black);
   margin: 25px 0;
-  font-weight: 300;
   font-family: var(--FontOpenSans);
 }
 
@@ -83,9 +83,27 @@ p {
   line-height: 2.1em;
 }
 
+ul li {
+  list-style: none;
+}
+
+li, dd {
+  line-height: 1.4em;
+}
+
+li {
+  color: var(--dark);
+  font-size: var(--FZRegular);
+}
+
 .container {
   width: calc(100% - 50px);
   max-width: 1024px;
   margin: 0 auto;
   display: block;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
